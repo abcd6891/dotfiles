@@ -29,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
 Plugin 'majutsushi/tagbar'
+Plugin 'drmingdrmer/vim-tabbar'
 
 "====================================================================
 " Run vundle
@@ -37,7 +38,7 @@ Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+" filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -50,7 +51,8 @@ filetype plugin indent on    " required
 "
 let g:airline_powerline_fonts = 1
 set laststatus=2
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 12 "only for gvim
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 14 "only for gvim
+set linespace=5
 
 "====================================================================
 "" Trinity Settings
@@ -80,17 +82,15 @@ set bg=dark
 "===========================
 "
 set nu "show line number
-set ai "auto indent
+set noai "auto indent
 
 ":set cursorline
 
-
 set tabstop=4
 set shiftwidth=4
-syntax enable
+set expandtab
 
-
-
+au Filetype python setl expandtab ts=4 sw=4
 
 "=============================================
 "setting for GVim
@@ -98,3 +98,10 @@ syntax enable
 "colorscheme slate
 highlight Normal guifg=white guibg=black
 "=============================================
+"
+
+" Uncomment the following to have Vim jump to the last position when
+"  reopening a file
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
