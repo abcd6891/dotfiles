@@ -6,7 +6,7 @@ cd ~
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # git related tools
-sudo apt innstall git tig
+sudo apt install git tig
 
 # git docments
-sudo apt install manpage-dev
+sudo apt install manpages-dev
