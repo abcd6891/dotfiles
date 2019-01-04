@@ -1,15 +1,6 @@
 #!/bin/bash
 
-# make tty1 ls looks better
-ls_color='LS_COLORS=$LS_COLORS:'"'"'di=0;36'"'"' ; export LS_COLORS'
-dedup=$(grep "$ls_color" ~/.bashrc | wc -l)
-if [ "$dedup" -eq 0 ]
-then
-    echo $ls_color >> ~/.bashrc
-fi
-
-
-for file in vimrc tmux.conf
+for file in vimrc tmux.conf bashrc.inc
 do
 		ln -s ~/dotfiles/"$file" ~/."$file"
 done
