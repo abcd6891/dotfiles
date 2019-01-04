@@ -1,13 +1,19 @@
 #!/bin/bash
 
-# install tools for remote
-sudo apt install nfs-kernel-server tmux openssh-server
+# install tools for remote access
+sudo apt install nfs-kernel-server tmux openssh-server -y
 
-# install tools for managements
-sudo apt install util-linux
+# install file protocols
+sudo apt install nfs-kernel-server samba -y
 
-# install tools for test
-sudo apt install fio
+#install file protocol helper
+sudo apt install autofs -y
 
-# install tools for other libraries
-sudo apt install curl parallel
+# install tools for managementss
+sudo apt install util-linux -y
+
+# install tools for performance tests
+sudo apt install fio -y
+
+# install tools for some build tools
+sudo apt install curl parallel python -y
