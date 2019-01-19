@@ -16,4 +16,4 @@ sudo apt install util-linux -y
 sudo apt install fio -y
 
 # install tools for some build tools
-sudo apt install curl parallel python php -y
+sudo apt install curl parallel python php php-pgsql -y
