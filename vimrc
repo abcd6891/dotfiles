@@ -94,6 +94,8 @@ set expandtab
 
 au Filetype python setl expandtab ts=4 sw=4
 
+set hlsearch
+
 " Uncomment the following to have Vim jump to the last position when
 "  reopening a file
 if has("autocmd")
