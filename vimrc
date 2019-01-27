@@ -51,7 +51,6 @@ filetype plugin indent on    " required
 "
 let g:airline_powerline_fonts = 1
 set laststatus=2
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 14 "only for gvim
 set linespace=5
 
 "====================================================================
@@ -74,13 +73,16 @@ nmap <F5> :TagbarToggle<CR>
 set noshowmode "show 'insert' at left bottom etc.
 set encoding=utf-8
 
-"other settings
 "============================
 "settings for tmux
+"===========================
 set term=xterm-256color
 set bg=dark
-"===========================
-"
+
+
+"============================
+"other settings
+"============================
 set nu "show line number
 set noai "auto indent
 
@@ -92,16 +94,16 @@ set expandtab
 
 au Filetype python setl expandtab ts=4 sw=4
 
-"=============================================
-"setting for GVim
-"
-"colorscheme slate
-highlight Normal guifg=white guibg=black
-"=============================================
-"
-
 " Uncomment the following to have Vim jump to the last position when
 "  reopening a file
 if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+"=============================================
+"setting for GVim
+"=============================================
+"colorscheme slate
+highlight Normal guifg=white guibg=black
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 14
+
