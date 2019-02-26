@@ -72,6 +72,7 @@ nmap <F5> :TagbarToggle<CR>
 
 set noshowmode "show 'insert' at left bottom etc.
 set encoding=utf-8
+set hlsearch
 
 "============================
 "settings for tmux
@@ -90,7 +91,7 @@ set noai "auto indent
 
 set tabstop=4
 set shiftwidth=4
-set expandtab
+"set expandtab
 
 au Filetype python setl expandtab ts=4 sw=4
 

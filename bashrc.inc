@@ -5,3 +5,6 @@
 
 alias twman='/usr/bin/man -L zh_TW:zh'
 alias man='/usr/bin/man -L en_US.utf8'
+
+#only for root
+alias vscode='code --user-data-dir="/root/.vscode" --extensions-dir="/root/.vscode/extensions"'
