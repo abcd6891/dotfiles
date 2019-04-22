@@ -10,4 +10,5 @@ sudo apt install git tig -y
 
 # git docments
 sudo apt install manpages-dev -y
-sudo apt-get install manpages-zh -y
+sudo apt install manpages-zh -y
+sudo apt install errno -y
