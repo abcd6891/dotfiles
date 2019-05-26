@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # vim related tools
-sudo apt install vim ctags cscope
+sudo apt install vim ctags cscope global
 cd ~
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

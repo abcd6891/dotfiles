@@ -110,3 +110,5 @@ endif
 highlight Normal guifg=white guibg=black
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 14
 
+" cscope interface of gtags
+set cscopeprg=gtags-cscope
