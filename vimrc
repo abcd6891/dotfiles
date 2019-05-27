@@ -92,6 +92,8 @@ set noai "auto indent
 set tabstop=4
 set shiftwidth=4
 "set expandtab
+:set ignorecase
+:set smartcase
 
 au Filetype python setl expandtab ts=4 sw=4
 
