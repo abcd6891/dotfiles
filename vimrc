@@ -23,7 +23,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
-Plugin 'chazy/cscope_maps'
+Plugin 'whatot/gtags-cscope.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'wesleyche/SrcExpl'
@@ -112,5 +112,8 @@ endif
 highlight Normal guifg=white guibg=black
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Book\ 14
 
-" cscope interface of gtags
-set cscopeprg=gtags-cscope
+let g:tagbar_left = 1
+
+" gtags-cscope.vim
+let GtagsCscope_Auto_Map = 1
+let GtagsCscope_Auto_Load = 1
